@@ -1,14 +1,5 @@
-"""Extracts from Yelp academic dataset JSON files and returns pkl of tuples:
-(reviewer's avg rating, r) 
-{business_ID :[(reviewer's avg rating, rating on business, business avg rating)]} 
-
-{business_ID:
-	{avg_rating: ___},
-	reviewer: (reviewer's avg rating, rating on business)}
-}
-
-
-2. (avg rating:#reviews)
+"""Extracts from Yelp academic dataset JSON files and returns pkled matrix:
+#FORMAT: [BIZ_AVG_STAR, USER_AVG_RATING, RATING]
 """
 
 import json
